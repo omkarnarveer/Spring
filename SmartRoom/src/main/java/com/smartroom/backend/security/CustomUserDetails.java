@@ -1,13 +1,14 @@
 package com.smartroom.backend.security;
 
-import com.smartroom.backend.entity.Student;
-import com.smartroom.backend.entity.Teacher;
+import java.util.Collection;
+import java.util.HashSet;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.Collection;
-import java.util.HashSet;
+import com.smartroom.backend.entity.Student;
+import com.smartroom.backend.entity.Teacher;
 
 public class CustomUserDetails implements UserDetails {
     private final Teacher teacher;

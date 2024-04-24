@@ -1,15 +1,16 @@
 package com.smartroom.backend.service;
 
-import com.smartroom.backend.entity.Student;
-import com.smartroom.backend.entity.Teacher;
-import com.smartroom.backend.exception.InvalidParameter;
-import com.smartroom.backend.repository.AuthenticationRepository;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.smartroom.backend.entity.Student;
+import com.smartroom.backend.entity.Teacher;
+import com.smartroom.backend.exception.InvalidParameter;
+import com.smartroom.backend.repository.AuthenticationRepository;
 
 @Service
 public class AuthenticationServiceImpl implements AuthenticationService {

@@ -1,8 +1,8 @@
 package com.smartroom.backend.exception;
 
-import org.springframework.http.HttpStatus;
-
 import java.util.List;
+
+import org.springframework.http.HttpStatus;
 
 public class NotValidError {
 

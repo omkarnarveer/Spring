@@ -4,8 +4,6 @@ import com.smartroom.backend.entity.Student;
 import com.smartroom.backend.entity.StudentDetails;
 import com.smartroom.backend.model.StudentModel;
 
-import java.util.List;
-
 public interface TeacherService {
 
     StudentModel createStudent(Student student) throws Exception;

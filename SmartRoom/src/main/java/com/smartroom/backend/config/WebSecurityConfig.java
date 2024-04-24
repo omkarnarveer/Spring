@@ -1,9 +1,4 @@
 package com.smartroom.backend.config;
-import com.smartroom.backend.filter.CorsFilter;
-
-import com.smartroom.backend.security.CustomUserDetailsService;
-import com.smartroom.backend.security.JwtAuthenticationEntryPoint;
-import com.smartroom.backend.security.JwtAuthenticationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -22,6 +17,10 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+
+import com.smartroom.backend.security.CustomUserDetailsService;
+import com.smartroom.backend.security.JwtAuthenticationEntryPoint;
+import com.smartroom.backend.security.JwtAuthenticationFilter;
 
 
 @EnableWebSecurity

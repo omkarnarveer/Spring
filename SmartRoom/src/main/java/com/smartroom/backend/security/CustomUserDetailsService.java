@@ -1,14 +1,15 @@
 package com.smartroom.backend.security;
 
-import com.smartroom.backend.entity.Student;
-import com.smartroom.backend.entity.Teacher;
-import com.smartroom.backend.repository.AuthenticationRepository;
-import com.smartroom.backend.repository.TeacherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+
+import com.smartroom.backend.entity.Student;
+import com.smartroom.backend.entity.Teacher;
+import com.smartroom.backend.repository.AuthenticationRepository;
+import com.smartroom.backend.repository.TeacherRepository;
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {

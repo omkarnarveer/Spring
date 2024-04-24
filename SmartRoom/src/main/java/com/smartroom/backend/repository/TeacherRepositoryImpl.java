@@ -1,7 +1,5 @@
 package com.smartroom.backend.repository;
 
-import com.smartroom.backend.entity.Student;
-import com.smartroom.backend.model.StudentModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.data.mongodb.core.MongoOperations;
@@ -10,7 +8,8 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+import com.smartroom.backend.entity.Student;
+import com.smartroom.backend.model.StudentModel;
 
 @Repository
 public class TeacherRepositoryImpl implements TeacherRepository {

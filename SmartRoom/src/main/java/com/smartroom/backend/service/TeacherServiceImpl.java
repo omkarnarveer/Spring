@@ -1,5 +1,22 @@
 package com.smartroom.backend.service;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DuplicateKeyException;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
 import com.smartroom.backend.email.EmailSender;
 import com.smartroom.backend.entity.Student;
 import com.smartroom.backend.entity.StudentDetails;
@@ -7,15 +24,6 @@ import com.smartroom.backend.exception.InvalidParameter;
 import com.smartroom.backend.model.MlRequest;
 import com.smartroom.backend.model.StudentModel;
 import com.smartroom.backend.repository.TeacherRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DuplicateKeyException;
-import org.springframework.http.*;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
-
-import java.util.*;
 
 @Service
 public class TeacherServiceImpl implements TeacherService {
